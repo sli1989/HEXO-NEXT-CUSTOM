@@ -91,6 +91,6 @@
   {% include '_third-party/exturl.swig' %}
   {% include '_my/audio.swig' %}
   <script>pangu.spacingPage();</script>
-  
+  <script type="text/javascript" src="/js/custom.js"></script>
 </body>
 </html>
