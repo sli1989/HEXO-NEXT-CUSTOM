@@ -1,3 +1,8 @@
+<html>
+
+<body>
+
+<blockquote>留言板</blockquote>
 
 <p align="justfly" id="heheda"><br></font></p>
 
@@ -28,3 +33,7 @@
     console.log("error");
   });
 </script>
+
+</body>
+
+</html>
