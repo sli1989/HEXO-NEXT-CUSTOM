@@ -1,6 +1,4 @@
 
-{% centerquote %}留言板{% endcenterquote %}
-
 <p align="justfly" id="heheda"><br></font></p>
 
 <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
