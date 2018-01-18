@@ -7,7 +7,6 @@ Git使用指南、Hexo博客设置、Git pages等更多搭建设置，点击查�
 
 本博客个性化列表：
 
-1. 2018年1月4日，升级使用Next v6.0.0。
 1. 切换使用Muse主题，开启[移动端添加目录和回到顶部按钮](https://sli1989.github.io/2017/04/02/github-for-win/#hexo-mobile)。
 1. [点击侧栏头像回到首页](https://sli1989.github.io/2017/04/02/github-for-win/#hexo-avatar)，让[页脚的心跳动起来](https://sli1989.github.io/2017/04/02/github-for-win/#hexo-heart)。`next/layout/_macro/sidebar.swig`，`next/layout/_partials/footer.swig`，`next/source/css/_custom/custom.styl`
 1. 开启[rss订阅](https://sli1989.github.io/2017/04/02/github-for-win/#hexo-rss)。`npm install hexo-generator-feed --save`
@@ -21,7 +20,7 @@ Git使用指南、Hexo博客设置、Git pages等更多搭建设置，点击查�
 9. ~~为NEXT[配置emoji表情](https://sli1989.github.io/2016/10/17/markdown-user-guide/#hexo-emoji)~~。`$ npm install hexo-filter-github-emojis --save`，`npm un hexo-renderer-stylus --save`，`npm install hexo-renderer-stylus-plus --save`，`themes/next/layout/_partials/head.swig`，`themes/next/source/js/src/utils.js`，`themes/next/source/css/_variables/base.styl`，`themes/next/source/css/_custom/custom.styl`
 1. 添加[阅读榜](https://sli1989.github.io/2017/04/02/github-for-win/#hexo-hit)和[Valine评论区](https://sli1989.github.io/2017/04/02/github-for-win/#valine)显示。
 1. 由于权限问题，暂时关闭[Gitment评论](https://sli1989.github.io/2017/04/02/github-for-win/#gitment)（[评论仓库](https://github.com/sli1989/gitment-comments/issues)），开启[Valine评论](https://sli1989.github.io/2017/04/02/github-for-win/#valine)。
-1. 升级 NexT 主题需要Fork的文件列表：
+1. 采用SED命令，自动自定义修改文件。升级 NexT 主题需要修改的文件列表：
     - `blog/source/_data/next.yml`
     - `blog/themes/next/layout/_macro/post.swig`
     - `blog/themes/next/layout/_macro/sidebar.swig`
