@@ -8,19 +8,19 @@ Git使用指南、Hexo博客设置、Git pages等更多搭建设置，点击查�
 本博客个性化列表：
 
 1. 切换使用Muse主题，开启[移动端添加目录和回到顶部按钮](https://sli1989.github.io/2017/04/02/github-for-win/#hexo-mobile)。
-1. [点击侧栏头像回到首页](https://sli1989.github.io/2017/04/02/github-for-win/#hexo-avatar)，让[页脚的心跳动起来](https://sli1989.github.io/2017/04/02/github-for-win/#hexo-heart)。`next/layout/_macro/sidebar.swig`，`next/layout/_partials/footer.swig`，`next/source/css/_custom/custom.styl`
+1. [点击侧栏头像回到首页](https://sli1989.github.io/2017/04/02/github-for-win/#hexo-avatar)，让[页脚的心跳动起来](https://sli1989.github.io/2017/04/02/github-for-win/#hexo-heart)。
 1. 开启[rss订阅](https://sli1989.github.io/2017/04/02/github-for-win/#hexo-rss)。`npm install hexo-generator-feed --save`
-2. 开启[本地搜索](https://sli1989.github.io/2017/04/02/github-for-win/#local-search)，~~修复IE环境可能失效的情况~~。`npm install hexo-generator-searchdb --save`，`next/layout/_third-party/search/localsearch.swig`
+2. 开启[本地搜索](https://sli1989.github.io/2017/04/02/github-for-win/#local-search)，~~修复IE环境可能失效的情况~~。`npm install hexo-generator-searchdb --save`
 3. 开启[文字统计](https://sli1989.github.io/2017/04/02/github-for-win/#hexo-wordcount)功能。`npm install hexo-symbols-count-time --save`
 4. 开启[文章置顶](https://sli1989.github.io/2017/04/02/github-for-win/#hexo-topindex)功能。`npm install hexo-generator-topindex --save`
 5. 使用[pangu.js](https://github.com/vinta/pangu.js)插件开启[中英文自动空格](https://sli1989.github.io/2017/04/02/github-for-win/#hexo-spacing)功能。`npm uninstall hexo-filter-auto-spacing`
-6. 添加[HTML5 音乐播放器](https://sli1989.github.io/2017/04/02/github-for-win/#h5palyer)，刷新页面后能够连续播放。`next/layout/_layout.swig`， `/next/layout/_my`
+6. 添加[HTML5 音乐播放器](https://sli1989.github.io/2017/04/02/github-for-win/#h5palyer)，刷新页面后能够连续播放。
 7. 使用[NeedMoreShare2](https://sli1989.github.io/2017/04/02/github-for-win/#hexo-share)分享插件。
-8. 通过[pandoc渲染](https://sli1989.github.io/2016/10/17/markdown-user-guide/#hexo-pandoc)，开启 [MathJax](https://sli1989.github.io/2016/10/17/markdown-user-guide/#hexo-mathjax)公式显示，开启[脚注功能](https://sli1989.github.io/2016/10/17/markdown-user-guide/#hexo-footnotes)，鼠标点击可以显示脚注。`next/source/js/custom.js`，`next/layout/_layout.swig`
-9. ~~为NEXT[配置emoji表情](https://sli1989.github.io/2016/10/17/markdown-user-guide/#hexo-emoji)~~。`$ npm install hexo-filter-github-emojis --save`，`npm un hexo-renderer-stylus --save`，`npm install hexo-renderer-stylus-plus --save`，`themes/next/layout/_partials/head.swig`，`themes/next/source/js/src/utils.js`，`themes/next/source/css/_variables/base.styl`，`themes/next/source/css/_custom/custom.styl`
-1. 添加[阅读榜](https://sli1989.github.io/2017/04/02/github-for-win/#hexo-hit)和[Valine评论区](https://sli1989.github.io/2017/04/02/github-for-win/#valine)显示。
-1. 由于权限问题，暂时关闭[Gitment评论](https://sli1989.github.io/2017/04/02/github-for-win/#gitment)（[评论仓库](https://github.com/sli1989/gitment-comments/issues)），开启[Valine评论](https://sli1989.github.io/2017/04/02/github-for-win/#valine)。
-1. 采用SED命令，自动自定义修改文件。升级 NexT 主题需要修改的文件列表：
+8. 通过[pandoc渲染](https://sli1989.github.io/2016/10/17/markdown-user-guide/#hexo-pandoc)，开启 [MathJax](https://sli1989.github.io/2016/10/17/markdown-user-guide/#hexo-mathjax)公式显示，开启[脚注功能](https://sli1989.github.io/2016/10/17/markdown-user-guide/#hexo-footnotes)，鼠标点击可以显示脚注。
+9. ~~为NEXT[配置emoji表情](https://sli1989.github.io/2016/10/17/markdown-user-guide/#hexo-emoji)~~。`$ npm install hexo-filter-github-emojis --save`，`npm un hexo-renderer-stylus --save`，`npm install hexo-renderer-stylus-plus --save`，
+1. 添加[阅读排行榜](https://sli1989.github.io/2017/04/02/github-for-win/#hexo-hit)。
+1. 由于权限问题，暂时关闭[Gitment评论](https://sli1989.github.io/2017/04/02/github-for-win/#gitment)（[评论仓库](https://github.com/sli1989/gitment-comments/issues)），开启[Valine评论](https://sli1989.github.io/2017/04/02/github-for-win/#valine)，添加[Valine留言板](https://sli1989.github.io/comments/)。
+1. <font color=red>采用SED命令</font>，自动自定义修改文件。升级 NexT 主题需要修改的文件列表：
     - `blog/source/_data/next.yml`
     - `blog/themes/next/layout/_macro/post.swig`
     - `blog/themes/next/layout/_macro/sidebar.swig`
@@ -31,6 +31,6 @@ Git使用指南、Hexo博客设置、Git pages等更多搭建设置，点击查�
     - `blog/themes/next/source/css/_custom/custom.styl`
     - `blog/themes/next/source/css/_common/components/post/post-reward.styl`
     - `blog/themes/next/source/js/custom.js`
-    - `blog/themes/next/languages/zh-hans`
+    - `blog/themes/next/languages/zh-hans.yml`
 
 ---
