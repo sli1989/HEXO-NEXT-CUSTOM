@@ -17,6 +17,10 @@ sed 's/"with-love"/"with-love" id="heart"/' -i $1/layout/_partials/footer.swig
 # 插入文件内容
 sed '/config.author }}<\/span>/r HexoNext/footer_powered' -i $1/layout/_partials/footer.swig
 
+# 增加footer-height
+# 替换
+# sed 's/$footer-height                  = 50px/$footer-height                  = 100px/' -i $1/source/css/_variables/base.styl
+
 # 修改leancloud的DNS
 # 替换
 # sed 's/https:\/\/cdn1.lncld.net\/static\/js\/av-core-mini-0.6.4.js/ \/static\/js\/av-core-mini-0.6.4.js/' -i $1/layout/_third-party/analytics/lean-analytics.swig
