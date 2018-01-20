@@ -1,29 +1,11 @@
 <br>
 
-{% if theme.footer.powered %}
-<div class="powered-by">
-Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
-</div>
-{% endif %}
-
 {% if theme.footer.powered and theme.footer.theme.enable %}
+  Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
   <span class="post-meta-divider">|</span>
-{% endif %}
-
-{% if theme.footer.powered %}
-<div class="powered-by">
-Hosted by <a href="https://pages.gitlab.io/" style="font-weight: bold">Gitlab Pages</a>
-</div>
-{% endif %}
-
-{% if theme.footer.powered and theme.footer.theme.enable %}
+  Hosted by <a href="https://pages.gitlab.io/" style="font-weight: bold">Gitlab Pages</a>
   <span class="post-meta-divider">|</span>
-{% endif %}
-
-{% if theme.footer.powered %}
-<div class="powered-by">
-Hosted by <a href="https://pages.github.com/" style="font-weight: bold">Github Pages</a>
-</div>
+  Hosted by <a href="https://pages.github.com/" style="font-weight: bold">Github Pages</a>
 {% endif %}
 
 <br>
