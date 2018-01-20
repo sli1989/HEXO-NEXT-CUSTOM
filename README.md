@@ -19,7 +19,7 @@ Git使用指南、Hexo博客设置、Git pages等更多搭建设置，点击查�
 8. 通过[pandoc渲染](https://sli1989.github.io/2016/10/17/markdown-user-guide/#hexo-pandoc)，开启 [MathJax](https://sli1989.github.io/2016/10/17/markdown-user-guide/#hexo-mathjax)公式显示，开启[脚注功能](https://sli1989.github.io/2016/10/17/markdown-user-guide/#hexo-footnotes)，鼠标点击可以显示脚注。
 9. ~~为NEXT[配置emoji表情](https://sli1989.github.io/2016/10/17/markdown-user-guide/#hexo-emoji)~~。`$ npm install hexo-filter-github-emojis --save`，`npm un hexo-renderer-stylus --save`，`npm install hexo-renderer-stylus-plus --save`，
 1. 添加[阅读排行榜](https://sli1989.github.io/2017/04/02/github-for-win/#hexo-hit)。
-1. 由于权限问题，暂时关闭[Gitment评论](https://sli1989.github.io/2017/04/02/github-for-win/#gitment)（[评论仓库](https://github.com/sli1989/gitment-comments/issues)），开启[Valine评论](https://sli1989.github.io/2017/04/02/github-for-win/#valine)，添加[Valine留言板](https://sli1989.github.io/comments/)。
+1. 由于权限问题，暂时关闭[Gitment评论](https://sli1989.github.io/2017/04/02/github-for-win/#gitment)（[评论仓库](https://github.com/sli1989/gitment-comments/issues)），开启LIVERE评论。由于[Valine评论与自定义页面API访问冲突](https://github.com/xCss/Valine/issues/)，暂时关闭[Valine评论](https://sli1989.github.io/2017/04/02/github-for-win/#valine)，关闭[Valine留言板](https://sli1989.github.io/comments/)。
 1. **采用SED命令，升级NEXT后自动自定义修改文件**。NexT 主题个性化文件列表：
     - `blog/source/_data/next.yml`
     - `blog/themes/next/layout/_macro/post.swig`
