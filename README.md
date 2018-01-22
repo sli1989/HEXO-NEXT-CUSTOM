@@ -12,21 +12,19 @@ Git使用指南、Hexo博客设置、Git pages等更多搭建设置，点击查�
 1. 开启[rss订阅](https://sli1989.github.io/2017/04/02/github-for-win/#hexo-rss)。`npm install hexo-generator-feed --save`
 2. 开启[本地搜索](https://sli1989.github.io/2017/04/02/github-for-win/#local-search)，~~修复IE环境可能失效的情况~~。`npm install hexo-generator-searchdb --save`
 3. 开启[文字统计](https://sli1989.github.io/2017/04/02/github-for-win/#hexo-wordcount)功能。`npm install hexo-symbols-count-time --save`
-4. 开启[文章置顶](https://sli1989.github.io/2017/04/02/github-for-win/#hexo-topindex)功能。`npm install hexo-generator-topindex --save`
-5. 使用[pangu.js](https://github.com/vinta/pangu.js)插件开启[中英文自动空格](https://sli1989.github.io/2017/04/02/github-for-win/#hexo-spacing)功能。`npm uninstall hexo-filter-auto-spacing`
+4. 开启[文章置顶](https://sli1989.github.io/2017/04/02/github-for-win/#hexo-topindex)功能，修改置顶规则，博文依据更新时间排序。`npm install hexo-generator-topindex --save`
+5. 开启[中英文自动空格](https://sli1989.github.io/2017/04/02/github-for-win/#hexo-spacing)功能。`npm uninstall hexo-filter-auto-spacing`
 6. 添加[HTML5 音乐播放器](https://sli1989.github.io/2017/04/02/github-for-win/#h5palyer)，刷新页面后能够连续播放。
 7. 使用[NeedMoreShare2](https://sli1989.github.io/2017/04/02/github-for-win/#hexo-share)分享插件。
-8. 通过[pandoc渲染](https://sli1989.github.io/2016/10/17/markdown-user-guide/#hexo-pandoc)，开启 [MathJax](https://sli1989.github.io/2016/10/17/markdown-user-guide/#hexo-mathjax)公式显示，开启[脚注功能](https://sli1989.github.io/2016/10/17/markdown-user-guide/#hexo-footnotes)，鼠标点击可以显示脚注。
+8. 使用[pandoc渲染](https://sli1989.github.io/2016/10/17/markdown-user-guide/#hexo-pandoc)，开启 [MathJax](https://sli1989.github.io/2016/10/17/markdown-user-guide/#hexo-mathjax)公式显示，开启[脚注功能](https://sli1989.github.io/2016/10/17/markdown-user-guide/#hexo-footnotes)，鼠标点击可以显示脚注。
 9. ~~为NEXT[配置emoji表情](https://sli1989.github.io/2016/10/17/markdown-user-guide/#hexo-emoji)~~。`$ npm install hexo-filter-github-emojis --save`，`npm un hexo-renderer-stylus --save`，`npm install hexo-renderer-stylus-plus --save`，
 1. 添加[阅读排行榜](https://sli1989.github.io/2017/04/02/github-for-win/#hexo-hit)。
 1. 由于权限问题，暂时关闭[Gitment评论](https://sli1989.github.io/2017/04/02/github-for-win/#gitment)（[评论仓库](https://github.com/sli1989/gitment-comments/issues)），开启LIVERE评论。由于[Valine评论与自定义页面API访问冲突](https://github.com/xCss/Valine/issues/)，暂时关闭[Valine评论](https://sli1989.github.io/2017/04/02/github-for-win/#valine)，关闭[Valine留言板](https://sli1989.github.io/comments/)。
 1. **采用SED命令，升级NEXT后自动自定义修改文件**。NexT v6.0.2 引入了个性化文件设置，所有个性化变量、样式等都可以通过`styles: source/_data/styles.styl`进行添加，方便升级主题。NexT 主题个性化文件列表：
-    - `blog/source/_data/next.yml`
     - `blog/themes/next/layout/_macro/post.swig`
     - `blog/themes/next/layout/_macro/sidebar.swig`
     - `blog/themes/next/layout/_layout.swig`
     - `blog/themes/next/layout/_my`，
-    - `blog/themes/next/layout/_partials/footer.swig`
     - `blog/themes/next/source/css/_common/components/post/post-reward.styl`
     - `blog/themes/next/source/js/custom.js`
     - `blog/themes/next/languages/zh-hans.yml`
