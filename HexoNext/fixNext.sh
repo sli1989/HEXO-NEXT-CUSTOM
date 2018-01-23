@@ -54,6 +54,9 @@ sed '/<\/body>/i <script type="text/javascript" src="/js/custom.js"></script>' -
 # 增加footer-height
 # sed 's/$footer-height                  = 50px/$footer-height                  = 100px/' -i $1/source/css/_variables/base.styl
 
+# 正文居中
+# 匹配行后面加
+sed '/@import "sidebar\/sidebar-blogroll";/a @import "../Pisces/_posts";' -i $1/source/css/_schemes/Muse/index.styl
 
 # 中文注释
 # sed '/commonweal: 公益404/a hits: 热文\r navi: 导航\r comments: 留言板' -i $1/languages/zh-Hans.yml
