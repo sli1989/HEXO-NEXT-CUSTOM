@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ./fixNext.sh next_theme_dir
-# for example HexoNext/fixNext.sh themes/next
+# for example FixNext/fixNext.sh themes/next
 
 # first install the Next theme
 # git clone https://github.com/theme-next/hexo-theme-next $1
@@ -18,7 +18,7 @@ sed 's/"with-love"/"with-love" id="heart"/' -i $1/layout/_partials/footer.swig
 # 添加footer_powered
 # 插入文件内容
 # NEXT提供了custom_text
-# sed '/config.author }}<\/span>/r HexoNext/footer_powered' -i $1/layout/_partials/footer.swig
+# sed '/config.author }}<\/span>/r FixNext/footer_powered' -i $1/layout/_partials/footer.swig
 
 # 修改leancloud的DNS
 # 替换
@@ -40,17 +40,17 @@ sed '/alt="{{ theme.author }}" \/>/a </a>' -i $1/layout/_macro/sidebar.swig
 # 匹配行前面加
 # 当带有单引号时 把命令行变成双引号
 sed "/<\/body>/i {% include '_my/audio.swig' %}" -i $1/layout/_layout.swig
-cp -a HexoNext/_my $1/layout
+cp -a FixNext/_my $1/layout
 
 # 脚注显示
 # 匹配行前面加
-cp HexoNext/custom.js $1/source/js
+cp FixNext/custom.js $1/source/js
 sed '/<\/body>/i <script type="text/javascript" src="/js/custom.js"></script>' -i $1/layout/_layout.swig
 
 # 字体与超链接等其他样式
 # Redefine custom file paths. Introduced in NexT v6.0.2.
-# cp HexoNext/custom1.styl $1/source/css/_variables/custom.styl
-# cp HexoNext/custom2.styl $1/source/css/_custom/custom.styl
+# cp FixNext/custom1.styl $1/source/css/_variables/custom.styl
+# cp FixNext/custom2.styl $1/source/css/_custom/custom.styl
 # 增加footer-height
 # sed 's/$footer-height                  = 50px/$footer-height                  = 100px/' -i $1/source/css/_variables/base.styl
 
@@ -59,8 +59,8 @@ sed '/<\/body>/i <script type="text/javascript" src="/js/custom.js"></script>' -
 sed '/@import "sidebar\/sidebar-blogroll";/a @import "../Pisces/_posts";' -i $1/source/css/_schemes/Muse/index.styl
 
 # 中文注释
-# sed '/commonweal: 公益404/a hits: 热文\r navi: 导航\r comments: 留言板' -i $1/languages/zh-Hans.yml
-cp HexoNext/zh-Hans.yml $1/languages/zh-hans.yml
+# sed '/commonweal: 公益404/a hits: 热文\r navi: 导航\r comments: 留言板' -i $1/languages/zh-CN.yml
+cp FixNext/zh-CN.yml $1/languages/zh-CN.yml
 
 # 注释文字闪动函数
 # 匹配行前面加
