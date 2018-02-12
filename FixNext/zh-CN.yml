@@ -31,11 +31,12 @@ post:
   read_more: 阅读全文
   untitled: 未命名
   toc_empty: 此文章未包含目录
-  visitors: 阅读次数
+  views: 阅读次数
   symbols_count: 字数统计
   symbols_time: 阅读时长
   total_symbols: 站点总字数
   total_time: 站点总阅读时长
+  related_posts: 相关文章
   copyright:
     author: 本文作者
     link: 本文链接
@@ -47,6 +48,8 @@ page:
 footer:
   powered: "由 %s 强力驱动"
   theme: 主题
+  total_views: 总访问量
+  total_visitors: 总访客量
 counter:
   tag_cloud:
     zero: 暂无标签
