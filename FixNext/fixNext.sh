@@ -1,14 +1,13 @@
 #!/bin/bash
-
 # ./fixNext.sh next_theme_dir
-# for example FixNext/fixNext.sh themes/next
+# for example put FixNext in hexo_dir and use: `FixNext/fixNext.sh themes/next`
 
 # pull the lastest Next theme
 # git clone https://github.com/theme-next/hexo-theme-next $1
 rm -rf $1
 git clone git@github.com:theme-next/hexo-theme-next.git $1
 
-# auto install 3rd libs locally
+# auto install 3rd libs locally, use CDN verdor instead
 # git clone https://github.com/theme-next/theme-next-pace $1/source/lib/pace
 # git clone https://github.com/theme-next/theme-next-needmoreshare2 $1/source/lib/needsharebutton
 # git clone https://github.com/theme-next/theme-next-reading-progress $1/source/lib/reading_progress
@@ -64,9 +63,11 @@ sed '/<\/body>/i <script type="text/javascript" src="/js/custom.js"></script>' -
 # add behind the matching row
 sed '/@import "sidebar\/sidebar-blogroll";/a @import "../Pisces/_posts";' -i $1/source/css/_schemes/Muse/index.styl
 
+# add new indexpage
+# add behind the matching row
+sed '/commonweal/a \  hits: 热文\n  navi: 导航\n  comments: 留言板' -i $1/languages/zh-CN.yml
 # replace the zh-CN
-# sed '/commonweal: 公益404/a hits: 热文\r navi: 导航\r comments: 留言板' -i $1/languages/zh-CN.yml
-cp FixNext/zh-CN.yml $1/languages/zh-CN.yml
+# cp FixNext/zh-CN.yml $1/languages/zh-CN.yml
 
 # delete words flashing in post-reward
 # add in front of the matching row
