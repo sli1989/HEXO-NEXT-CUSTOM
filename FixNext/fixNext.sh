@@ -45,7 +45,7 @@ sed '/alt="{{ theme.author }}" \/>/a </a>' -i $1/layout/_macro/sidebar.swig
 # add in front of the matching row
 # Turn the command line into double quotes when you have single quotes
 sed "/<\/body>/i {% include '_my/audio.swig' %}" -i $1/layout/_layout.swig
-cp -a FixNext/_my $1/layout
+cp -a FixNext/QPlayer/_my $1/layout
 
 # display Footnotes 
 # add in front of the matching row
