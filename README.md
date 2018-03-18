@@ -21,7 +21,7 @@ Git使用指南、Hexo博客设置、Git pages等更多搭建设置，点击查�
 2. NEXT v6.0.4 使用 jsdelivr CDN vendor 实现第三方功能。
     - 开启[中英文自动空格](https://sli1989.github.io/2017/04/02/github-for-win/#hexo-spacing)功能。`npm uninstall hexo-filter-auto-spacing`
     - 使用[NeedMoreShare2](https://sli1989.github.io/2017/04/02/github-for-win/#hexo-share)分享插件。
-1. **采用[子模块管理](https://sli1989.github.io/2017/04/02/github-for-win/#git-submodule)**升级主题，使用 [DATA FILE](https://github.com/sli1989/HEXO-NEXT-CUSTOM/tree/master/source/_data) 设置主题样式。也可以采用[SED命令](https://github.com/sli1989/HEXO-NEXT-CUSTOM/blob/master/FixNext/fixNext.sh)，自动升级并修改 NEXT 主题文件。NexT 主题个性化文件列表：
+1. 采用[子模块管理](https://sli1989.github.io/2017/04/02/github-for-win/#git-submodule)升级主题，使用 [DATA FILE](https://github.com/sli1989/HEXO-NEXT-CUSTOM/tree/master/source/_data) 设置主题样式。也可以采用[SED命令](https://github.com/sli1989/HEXO-NEXT-CUSTOM/blob/master/FixNext/fixNext.sh)，自动升级并修改 NEXT 主题文件。NexT 主题个性化文件列表：
     - `blog/themes/next/layout/_macro/post.swig`
     - `blog/themes/next/layout/_macro/sidebar.swig`
     - `blog/themes/next/layout/_layout.swig`
