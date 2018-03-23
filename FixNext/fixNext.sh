@@ -6,6 +6,7 @@
 # git clone https://github.com/theme-next/hexo-theme-next $1
 rm -rf $1
 git clone git@github.com:theme-next/hexo-theme-next.git $1
+# git clone git@github.com:sli1989/hexo-theme-next.git themes/next
 
 # auto install 3rd libs locally, use CDN verdor instead
 # git clone https://github.com/theme-next/theme-next-pace $1/source/lib/pace
@@ -17,9 +18,10 @@ git clone git@github.com:theme-next/hexo-theme-next.git $1
 # replace symbol of tags
 sed 's/rel="tag">#/rel="tag"><i class="fa fa-tag"><\/i>/' -i $1/layout/_macro/post.swig
 
+# added in v607
 # Beat up the heart on the footer
 # replace
-sed 's/"with-love"/"with-love" id="heart"/' -i $1/layout/_partials/footer.swig
+# sed 's/"with-love"/"with-love" id="heart"/' -i $1/layout/_partials/footer.swig
 
 # add footer_powered
 # custom_text provided by next v6
@@ -35,6 +37,7 @@ sed '/<img class="site-author-image"/i <a href="/" class="site-author-image" rel
 # add behind the matching row
 sed '/alt="{{ theme.author }}" \/>/a </a>' -i $1/layout/_macro/sidebar.swig
 
+# added in next
 # auto spaceing using pangu.js 
 # add in front of the matching row
 # sed '/<\/head>/i <script src="https://cdnjs.cloudflare.com/ajax/libs/pangu/3.3.0/pangu.min.js"></script>' -i $1/layout/_layout.swig
