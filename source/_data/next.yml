@@ -1,0 +1,732 @@
+# ---------------------------------------------------------------
+# Theme Core Configuration Settings
+# ---------------------------------------------------------------
+
+# Set to true, if you want to fully override the default configuration.
+# Useful if you don't want to inherit the theme _config.yml configurations.
+override: false
+
+# Allow to cache content generation. Introduced in NexT v6.0.0.
+cache:
+  enable: true
+
+  
+# Redefine custom file paths. Introduced in NexT v6.0.2.
+# If commented, will be used default custom file paths.
+
+# For example, you want to put your custom styles file
+# outside theme directory in root `source/_data`, set
+# `styles: source/_data/styles.styl`
+custom_file_path:
+  # Default paths: layout/_custom/*
+  #head: source/_data/head.swig # layout/_custom/head.swig
+  #header: source/_data/header.swig # layout/_custom/header.swig
+  #sidebar: source/_data/sidebar.swig # layout/_custom/sidebar.swig
+
+  # Default path: source/css/_custom/custom.styl
+  styles: source/_data/styles.styl
+  # Default path: source/css/_mixins/custom.styl
+  #mixins: source/_data/mixins.styl
+  # Default path: source/css/_variables/custom.styl
+  variables: source/_data/variables.styl
+  
+# ---------------------------------------------------------------
+# Site Information Settings
+# ---------------------------------------------------------------
+
+# To get or check favicons visit: https://realfavicongenerator.net
+# Put your favicons into `hexo-site/source/` (recommend) or `hexo-site/themes/next/source/images/` directory.
+
+# Default NexT favicons placed in `hexo-site/themes/next/source/images/` directory.
+# And if you want to place your icons in `hexo-site/source/` root directory, you must remove `/images` prefix from pathes.
+
+# For example, you put your favicons into `hexo-site/source/images` directory.
+# Then need to rename & redefine they on any other names, otherwise icons from Next will rewrite your custom icons in Hexo.
+favicon:
+  small: /images/favicon.ico #favicon-16x16-next.png
+  medium: /images/favicon.ico #favicon-32x32-next.png
+  apple_touch_icon: /images/favicon.ico #apple-touch-icon-next.png
+  safari_pinned_tab: /images/favicon.ico #logo.svg
+  #android_manifest: /images/manifest.json
+  #ms_browserconfig: /images/browserconfig.xml
+
+# Set rss to false to disable feed link.
+# Leave rss as empty to use site's feed link.
+# Set rss to specific value if you have burned your feed already.
+rss: /atom.xml
+
+footer:
+  # Specify the date when the site was setup.
+  # If not defined, current year will be used.
+  #since: 2015
+
+  # Icon between year and copyright info.
+  icon: 
+    # Icon name in fontawesome, see: https://fontawesome.com/v4.7.0/icons
+    # `heart` is recommended with animation in red (#ff0000).
+    name: heart
+    # If you want to animate the icon, set it to true.
+    animated: true
+    # Change the color of icon, using Hex Code.
+    color: "#FF71A8"
+
+  # If not defined, will be used `author` from Hexo main config.
+  copyright:
+  # -------------------------------------------------------------
+  # Hexo link (Powered by Hexo).
+  powered:
+    # Hexo link (Powered by Hexo).
+    enable: true
+    # Version info of Hexo after Hexo link (vX.X.X).
+    version: true
+
+  theme:
+    # Theme & scheme info link (Theme - NexT.scheme).
+    enable: true
+    # Version info of NexT after scheme info (vX.X.X).
+    version: true
+  # -------------------------------------------------------------
+  # Any custom text can be defined here.
+  custom_text: Hosted by <a target="_blank" href="https://pages.coding.me">Coding Pages</a>  |  Hosted by <a target="_blank" href="https://pages.github.com">GitHub Pages</a>  |  Hosted by <a target="_blank"  href="https://about.gitlab.com/features/pages/">Gitlab Pages</a>
+
+# ---------------------------------------------------------------
+# SEO Settings
+# ---------------------------------------------------------------
+
+# Change headers hierarchy on site-subtitle (will be main site description) and on all post/pages titles for better SEO-optimization.
+seo: true
+
+# If true, will add site-subtitle to index page, added in main hexo config.
+# subtitle: Subtitle
+index_with_subtitle: true
+
+# ---------------------------------------------------------------
+# Menu Settings
+# ---------------------------------------------------------------
+
+# When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash from link value (/archives -> archives).
+# Usage: `Key: /link/ || icon`
+# Key is the name of menu item. If translate for this menu will find in languages - this translate will be loaded; if not - Key name will be used. Key is case-senstive.
+# Value before `||` delimeter is the target link.
+# Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
+menu:
+  home: / || home
+  #about: /about/ || user
+  categories: /categories/ || th
+  #archives: /archives/ || archive
+  tags: /tags/ || tags
+  #schedule: /schedule/ || calendar
+  #sitemap: /sitemap.xml || sitemap
+  #commonweal: /404/ || heartbeat
+  #navi: /navi/ || paper-plane-o
+  hits: /hits/ || fire
+  comments: /comments/ || comment-o
+
+# Enable/Disable menu icons / item badges.
+menu_settings:
+  icons: true
+  badges: true
+
+# ---------------------------------------------------------------
+# Scheme Settings
+# ---------------------------------------------------------------
+
+# Schemes
+scheme: Muse
+#scheme: Mist
+#scheme: Pisces
+#scheme: Gemini
+
+
+# ---------------------------------------------------------------
+# Sidebar Settings
+# ---------------------------------------------------------------
+
+# Posts / Categories / Tags in sidebar.
+site_state: true
+
+# Social Links.
+# Usage: `Key: permalink || icon`
+# Key is the link label showing to end users.
+# Value before `||` delimeter is the target permalink.
+# Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
+social:
+  #GitHub: https://github.com/sli1989 || github
+  E-Mail: mailto:sli@hust.edu.cn || envelope
+  Telegram: https://t.me/sli1989 || telegram
+  Gitter: https://gitter.im/sli1989 || github-alt
+  #Google: https://plus.google.com/yourname || google
+  #Twitter: https://twitter.com/yourname || twitter
+  #FB Page: https://www.facebook.com/yourname || facebook
+  #VK Group: https://vk.com/yourname || vk
+  #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
+  #YouTube: https://youtube.com/yourname || youtube
+  #Instagram: https://instagram.com/yourname || instagram
+  #Skype: skype:yourname?call|chat || skype
+  #Coding: https://coding.net/u/sli1989 || codiepie
+  #Gitlab: https://gitlab.com/sli1989 || gitlab
+
+social_icons:
+  enable: true
+  icons_only: false
+  transition: false
+  # Dependencies: exturl: true in Tags Settings section below.
+  # To encrypt links above use https://www.base64encode.org
+  # Example encoded link: `GitHub: aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQ= || github`
+  exturl: false
+
+# Blog rolls
+links_icon: link
+links_title: Links
+links_layout: block
+#links_layout: inline
+links:
+  About the Blog: https://github.com/sli1989/HEXO-NEXT-CUSTOM
+  # Coding: https://coding.net/u/sli1989
+  # Gitlab: https://gitlab.com/sli1989
+  Font Awesome Icons: http://fontawesome.io/icons/
+  Copy and Paste Emoji: https://getemoji.com/
+
+# Sidebar Avatar
+avatar:
+  # in theme directory(source/images): /images/avatar.gif
+  # in site  directory(source/uploads): /uploads/avatar.gif
+  # You can also use other linking images.
+  url: /uploads/avatar.jpg #/images/avatar.gif
+  # You can set the `exturl` to linking the avatar. 
+  # `exturl: /` means linking to the homepage
+  exturl: https://github.com/theme-next/hexo-theme-next
+  # If true, the avatar would be dispalyed in circle. 
+  rounded: true
+  # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
+  opacity: 1
+  # If true, the avatar would be rotated with the cursor.
+  rotated: false
+
+# Table Of Contents in the Sidebar
+toc:
+  enable: true
+
+  # Automatically add list number to toc.
+  number: true
+
+  # If true, all words will placed on next lines if header width longer then sidebar width.
+  wrap: false
+
+# Creative Commons 4.0 International License.
+# http://creativecommons.org/
+# Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
+#creative_commons: by-nc-sa
+#creative_commons:
+
+sidebar:
+  # Sidebar Position, available value: left | right (only for Pisces | Gemini).
+  position: left
+  #position: right
+
+  # Sidebar Display, available value (only for Muse | Mist):
+  #  - post    expand on posts automatically. Default.
+  #  - always  expand for all pages automatically
+  #  - hide    expand only when click on the sidebar toggle icon.
+  #  - remove  Totally remove sidebar including sidebar toggle.
+  display: post
+  #display: always
+  #display: hide
+  #display: remove
+
+  # Sidebar offset from top menubar in pixels (only for Pisces | Gemini).
+  offset: 12
+
+  # Back to top in sidebar (only for Pisces | Gemini).
+  b2t: false
+
+  # Scroll percent label in b2t button.
+  scrollpercent: true
+
+  # Enable sidebar on narrow view (only for Muse | Mist).
+  onmobile: true
+
+
+# ---------------------------------------------------------------
+# Post Settings
+# ---------------------------------------------------------------
+
+# Pangu Support
+# Dependencies: https://github.com/theme-next/theme-next-pangu
+# For more information: https://github.com/vinta/pangu.js
+pangu: true
+
+# Automatically scroll page to section which is under <!-- more --> mark.
+scroll_to_more: true
+
+# Automatically excerpt description in homepage as preamble text.
+excerpt_description: true
+
+# Automatically Excerpt. Not recommend.
+# Please use <!-- more --> in the post to control excerpt accurately.
+auto_excerpt:
+  enable: true
+  length: 150
+
+# Post meta display settings
+post_meta:
+  item_text: true
+  created_at: false
+  updated_at:
+    enabled: true
+    # If true, show updated date label only if `updated date` different from 'created date' (post edited in another day than was created).
+    # And if post will edited in same day as created, edited time will show in popup title under created time label.
+    # If false show anyway, but if post edited in same day, show only edited time.
+    another_day: false
+  categories: true
+  
+# Post wordcount display settings
+# Dependencies: https://github.com/theme-next/hexo-symbols-count-time
+symbols_count_time:
+  separated_meta: true
+  item_text_post: true
+  item_text_total: true
+  awl: 4
+  wpm: 275
+
+codeblock:
+  # Manual define the border radius in codeblock
+  # Leave it empty for the default 1
+  border_radius: 10
+  # Add copy button on codeblock
+  copy_button:
+    enable: true
+    # Show text copy result
+    show_result: true
+  
+# Related popular posts
+# Dependencies: https://github.com/tea3/hexo-related-popular-posts
+related_posts:
+  enable: true
+  title: # custom header, leave empty to use the default one
+  display_in_home: false
+  params:
+    maxCount: 5
+    #PPMixingRate: 0.0
+    #isDate: false
+    #isImage: false
+    #isExcerpt: false
+
+# Declare license on posts
+post_copyright:
+  enable: false
+  license: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a>
+
+  
+# Enable "cheers" for archive page.
+cheers_enabled: true
+
+# ---------------------------------------------------------------
+# Font Settings
+# - Find fonts on Google Fonts (https://www.google.com/fonts)
+# - All fonts set here will have the following styles:
+#     light, light italic, normal, normal italic, bold, bold italic
+# - Be aware that setting too much fonts will cause site running slowly
+# - Introduce in 5.0.1
+# ---------------------------------------------------------------
+# CAUTION! Safari Version 10.1.2 bug: https://github.com/iissnan/hexo-theme-next/issues/1844
+# To avoid space between header and sidebar in Pisces / Gemini themes recommended to use Web Safe fonts for `global` (and `logo`):
+# Arial | Tahoma | Helvetica | Times New Roman | Courier New | Verdana | Georgia | Palatino | Garamond | Comic Sans MS | Trebuchet MS
+# ---------------------------------------------------------------
+font:
+  enable: true
+
+  # Uri of fonts host. E.g. //fonts.googleapis.com (Default).
+  host:
+
+  # Font options:
+  # `external: true` will load this font family from `host` above.
+  # `family: Times New Roman`. Without any quotes.
+  # `size: xx`. Use `px` as unit.
+
+  # Global font settings used on <body> element.
+  global:
+    external: true
+    family: Lato
+    size:
+
+  # Font settings for Headlines (h1, h2, h3, h4, h5, h6).
+  # Fallback to `global` font settings.
+  headings:
+    external: true
+    family:
+    size:
+
+  # Font settings for posts.
+  # Fallback to `global` font settings.
+  posts:
+    external: true
+    family:
+
+  # Font settings for Logo.
+  # Fallback to `global` font settings.
+  logo:
+    external: true
+    family:
+    size:
+
+  # Font settings for <code> and code blocks.
+  codes:
+    external: true
+    family:
+    size:
+
+
+# ---------------------------------------------------------------
+# Third Party Services Settings
+# ---------------------------------------------------------------
+
+# Math Equations Render Support
+math:
+  enable: true
+
+  # Default(true) will load mathjax/katex script on demand
+  # That is it only render those page who has 'mathjax: true' in Front Matter.
+  # If you set it to false, it will load mathjax/katex srcipt EVERY PAGE.
+  per_page: false
+
+  engine: mathjax
+  #engine: katex
+
+  # hexo-rendering-pandoc (or hexo-renderer-kramed) needed to full MathJax support.
+  mathjax:
+    # Use 2.7.1 as default, jsdelivr as default CDN, works everywhere even in China
+    cdn: //cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+    # For newMathJax CDN (cdnjs.cloudflare.com) with fallback to oldMathJax (cdn.mathjax.org).
+    #cdn: //cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+    # For direct link to MathJax.js with CloudFlare CDN (cdnjs.cloudflare.com).
+    #cdn: //cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML
+    # For automatic detect latest version link to MathJax.js and get from Bootcss.
+    #cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML
+
+  # hexo-renderer-markdown-it-plus (or hexo-renderer-markdown-it with markdown-it-katex plugin)
+  # needed to full Katex support.
+  katex:
+    # Use 0.7.1 as default, jsdelivr as default CDN, works everywhere even in China
+    cdn: //cdn.jsdelivr.net/npm/katex@0.7.1/dist/katex.min.css
+    # CDNJS, provided by cloudflare, maybe the best CDN, but not works in China
+    #cdn: //cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css
+    # Bootcss, works great in China, but not so well in other region
+    #cdn: //cdn.bootcss.com/KaTeX/0.7.1/katex.min.css
+
+# Baidu Share
+# Available value:
+#    button | slide
+# Warning: Baidu Share does not support https.
+# baidushare:
+  # type: button
+
+# NeedMoreShare2
+# Dependencies: https://github.com/theme-next/theme-next-needmoreshare2
+# See: https://github.com/revir/need-more-share2
+# Also see: https://github.com/DzmVasileusky/needShareButton
+# iconStyle: default | box
+# boxForm: horizontal | vertical
+# position: top / middle / bottom + Left / Center / Right
+# networks: Weibo,Wechat,Douban,QQZone,Twitter,Linkedin,Mailto,Reddit,
+#           Delicious,StumbleUpon,Pinterest,Facebook,GooglePlus,Slashdot,
+#           Technorati,Posterous,Tumblr,GoogleBookmarks,Newsvine,
+#           Evernote,Friendfeed,Vkontakte,Odnoklassniki,Mailru
+needmoreshare2:
+  enable: true
+  postbottom:
+    enable: false
+    options:
+      iconStyle: box
+      boxForm: horizontal
+      position: bottomCenter
+      networks: Weibo,Wechat,Douban,QQZone,Twitter,Facebook
+  float:
+    enable: true
+    options:
+      iconStyle: box
+      boxForm: horizontal
+      position: middleRight
+      networks: Weibo,Wechat,Douban,QQZone,Twitter,Facebook
+
+# Google Analytics
+google_analytics: UA-96363634-1
+
+# Show Views/Visitors of the website/page with busuanzi.
+# Get more information on http://ibruce.info/2015/04/04/busuanzi/
+busuanzi_count:
+  enable: true
+  total_visitors: true
+  total_visitors_icon: user
+  total_views: true
+  total_views_icon: eye
+  post_views: false
+  post_views_icon: eye
+
+# Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO
+baidu_push: true
+
+# Algolia Search
+# Dependencies: https://github.com/theme-next/theme-next-algolia-instant-search
+algolia_search:
+  enable: false
+  hits:
+    per_page: 10
+  labels:
+    input_placeholder: Search for Posts
+    hits_empty: "We didn't find any results for the search: ${query}"
+    hits_stats: "${hits} results found in ${time} ms"
+
+# Local search
+# Dependencies: https://github.com/theme-next/hexo-generator-searchdb
+local_search:
+  enable: true
+  # if auto, trigger search by changing input
+  # if manual, trigger search by pressing enter key or search button
+  trigger: auto
+  # show top n results per article, show all results by setting to -1
+  top_n_per_article: 1
+  # unescape html strings to the readable one
+  unescape: true
+
+# Bookmark Support
+# Dependencies: https://github.com/theme-next/theme-next-bookmark
+bookmark:
+  enable: true
+  # if auto
+  #   - save the reading position when closing the page
+  #   - or clicking the bookmark-icon
+  # if manual, only save it by clicking the bookmark-icon
+  save: auto
+
+# ---------------------------------------------------------------
+# Tags Settings
+# ---------------------------------------------------------------
+
+# Note tag (bs-callout).
+note:
+  # Note tag style values:
+  #  - simple    bs-callout old alert style. Default.
+  #  - modern    bs-callout new (v2-v3) alert style.
+  #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
+  #  - disabled  disable all CSS styles import of note tag.
+  style: simple
+  icons: true
+  border_radius: 3
+  # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
+  # Offset also applied to label tag variables. This option can work with disabled note tag.
+  light_bg_offset: 0
+
+# Label tag.
+label: true
+
+# Tabs tag.
+tabs:
+  enable: true
+  transition:
+    tabs: true
+    labels: true
+  border_radius: 0
+
+# Reading progress bar
+# Dependencies: https://github.com/theme-next/theme-next-reading-progress
+reading_progress:
+  enable: true
+  color: "#37c6c0"
+  height: 2px
+
+
+# Progress bar in the top during page loading.
+# Dependencies: https://github.com/theme-next/theme-next-pace
+pace: true
+# Themes list:
+#pace-theme-big-counter
+#pace-theme-bounce
+#pace-theme-barber-shop
+#pace-theme-center-atom
+#pace-theme-center-circle
+#pace-theme-center-radar
+#pace-theme-center-simple
+#pace-theme-corner-indicator
+#pace-theme-fill-left
+#pace-theme-flash
+#pace-theme-loading-bar
+#pace-theme-mac-osx
+#pace-theme-minimal
+# For example
+# pace_theme: pace-theme-center-simple
+pace_theme: pace-theme-minimal
+
+# Script Vendors.
+# Set a CDN address for the vendor you want to customize.
+# For example
+#    jquery: https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js
+# Be aware that you should use the same version as internal ones to avoid potential problems.
+# Please use the https protocol of CDN files when you enable https on your site.
+vendors:
+  # Internal path prefix. Please do not edit it.
+  _internal: lib
+
+  # Internal version: 2.1.3
+  jquery: https://cdn.jsdelivr.net/npm/jquery@2.1.3/dist/jquery.min.js
+  # https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js
+
+  # Internal version: 2.1.5
+  # See: http://fancyapps.com/fancybox/
+  fancybox: 
+  # https://cdn.jsdelivr.net/npm/fancybox@3.0.0/dist/js/jquery.fancybox.pack.js
+  # https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js
+  fancybox_css: 
+  #  https://cdn.jsdelivr.net/npm/fancybox@3.0.0/dist/css/jquery.fancybox.min.css
+  # https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css
+
+  # Internal version: 1.0.6
+  # See: https://github.com/ftlabs/fastclick
+  fastclick: https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js
+
+  # Internal version: 1.9.7
+  # See: https://github.com/tuupola/jquery_lazyload
+  lazyload: 
+  #https://cdn.jsdelivr.net/npm/jquery_lazyload@1.9.3/jquery.lazyload.min.js
+
+  # Internal version: 1.2.1
+  # See: http://VelocityJS.org
+  velocity: https://cdn.jsdelivr.net/npm/velocity-animate@1.2.1/velocity.min.js
+  # https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.min.js
+
+  # Internal version: 1.2.1
+  # See: http://VelocityJS.org
+  velocity_ui: https://cdn.jsdelivr.net/npm/velocity-animate@1.2.1/velocity.ui.min.js
+  #https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.ui.min.js
+
+  # Internal version: 0.7.9
+  # See: https://faisalman.github.io/ua-parser-js/
+  ua_parser: https://cdn.jsdelivr.net/npm/ua-parser-js@0.7.17/src/ua-parser.min.js
+  #https://cdnjs.cloudflare.com/ajax/libs/UAParser.js/0.7.9/ua-parser.min.js
+
+  # Internal version: 4.6.2
+  # See: http://fontawesome.io/
+  fontawesome: https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css
+  #https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css
+
+  # Internal version: 1
+  # https://www.algolia.com
+  algolia_instant_js: 
+  # https://cdn.jsdelivr.net/npm/instantsearch.js@2.4.1/dist/instantsearch.js
+  algolia_instant_css: 
+  # https://cdn.jsdelivr.net/npm/instantsearch.js@2.4.1/dist/instantsearch.min.css
+
+  # Internal version: 1.0.2
+  # See: https://github.com/HubSpot/pace
+  # Or use direct links below:
+  pace: https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js
+  # https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js
+  # //cdn.bootcss.com/pace/1.0.2/pace.min.js
+  pace_css: https://cdn.jsdelivr.net/npm/pace-js@1.0.2/themes/blue/pace-theme-minimal.css
+  #https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/blue/pace-theme-minimal.min.css
+  # //cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-flash.min.css
+
+  # Internal version: 1.0.0
+  # https://github.com/hustcc/canvas-nest.js
+  canvas_nest: 
+  # https://cdn.jsdelivr.net/npm/canvas-nest.js@1.0.1/dist/canvas-nest.min.js
+  # https://cdnjs.cloudflare.com/ajax/libs/canvas-nest.js/1.0.1/canvas-nest.min.js
+
+  # three
+  three:
+
+  # three_waves
+  # https://github.com/jjandxa/three_waves
+  three_waves:
+
+  # three_waves
+  # https://github.com/jjandxa/canvas_lines
+  canvas_lines:
+
+  # three_waves
+  # https://github.com/jjandxa/canvas_sphere
+  canvas_sphere:
+
+  # Internal version: 1.0.0
+  # https://github.com/zproo/canvas-ribbon
+  canvas_ribbon:
+
+  # Internal version: 3.3.0
+  # https://github.com/ethantw/Han
+  han:
+
+  # Internal version: 3.3.0
+  # https://github.com/vinta/pangu.js
+  pangu: https://cdn.jsdelivr.net/npm/pangu@3.3.0/dist/browser/pangu.min.js
+  # https://cdnjs.cloudflare.com/ajax/libs/pangu/3.3.0/pangu.min.js
+
+  # needMoreShare2
+  # https://github.com/revir/need-more-share2
+  needmoreshare2_js: https://cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1.0.0/needsharebutton.min.js
+  needmoreshare2_css: https://cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1.0.0/needsharebutton.min.css
+
+  # bookmark
+  # Internal version: 1.0.0
+  # https://github.com/theme-next/theme-next-bookmark
+  bookmark: https://cdn.jsdelivr.net/gh/theme-next/theme-next-bookmark@1.0.0/bookmark.min.js
+
+  # reading_progress
+  # Internal version: 1.0
+  # https://github.com/theme-next/theme-next-reading-progress
+  # Example: https://cdn.jsdelivr.net/gh/theme-next/theme-next-reading-progress@1.1/reading_progress.min.js
+  reading_progress: https://cdn.jsdelivr.net/gh/theme-next/theme-next-reading-progress@1.1/reading_progress.min.js
+
+
+reward_comment: 谢谢鼓励，欢迎留言反馈
+wechatpay: http://ww1.sinaimg.cn/large/645f3b4dly1fga9zusywoj20n00vk0u8.jpg
+alipay: http://ww1.sinaimg.cn/large/645f3b4dgy1fgb9uipfmnj20k00uc42y.jpg
+
+audio: 
+  enable: true   
+  sources: [
+        {title: '远方', 
+        artist: '余枫',
+        mp3: 'http://other.web.nf01.sycdn.kuwo.cn/resource/n3/44/73/867748343.mp3',
+        cover: 'http://p1.music.126.net/9zVS4Xv5_CKaPslH1-zFQA==/109951163076153778.jpg' },
+        {title: '午后庭院',
+        artist: '夏天播放',
+        mp3: 'http://other.web.rc01.sycdn.kuwo.cn/resource/n3/89/73/3735313360.mp3',
+        cover: 'http://p1.music.126.net/5uQHiJSmUMo74VAR4KJCTA==/6670737045946097.jpg' },
+        {title: '远走高飞',
+        artist: '金志文',
+        mp3: 'http://other.web.ri01.sycdn.kuwo.cn/resource/n2/15/34/1814734020.mp3',
+        cover: 'https://p1.music.126.net/elfqBKIdad0KYCCeKQpDSA==/18700493767108166.jpg' },
+        {title: 'Panama',
+        artist: 'Matteo',
+        mp3: 'http://other.web.nf01.sycdn.kuwo.cn/resource/n2/40/14/3065311430.mp3',
+        cover: 'https://p1.music.126.net/Fq1Ypau-g86ZtotF4wPEKw==/7867005697927440.jpg' },
+        {title: '带你去旅行',
+        artist: '校长',
+        mp3: 'http://other.web.ri01.sycdn.kuwo.cn/resource/n3/62/74/1268413280.mp3',
+        cover: 'https://p1.music.126.net/Y1M_jMalH6bWa6OydUeU2A==/18555358232355277.jpg' },
+        {title: '她',
+        artist: '不可撤销乐队',
+        mp3: 'http://other.web.re01.sycdn.kuwo.cn/resource/n2/80/35/1800542741.mp3',
+        cover: 'https://p1.music.126.net/4x2X7W_VGHQeHoMR4a3Wbw==/3227066628477266.jpg' },
+        {title: '给你',
+        artist: '陈奕迅',
+        mp3: 'http://other.web.ra01.sycdn.kuwo.cn/resource/n3/192/12/26/3368618703.mp3',
+        cover: 'https://p1.music.126.net/GK7EB01AIEE9-qHkBi-3vg==/89060441862562.jpg' },
+        {title: '千禧',
+        artist: '徐秉龙',
+        mp3: 'http://other.web.nf01.sycdn.kuwo.cn/resource/n3/48/17/1825497715.mp3',
+        cover: 'https://y.gtimg.cn/music/photo_new/T002R300x300M000004UOSJ5117bcd.jpg' },
+        {title: '年度之歌',
+        artist: '谢安琪',
+        mp3: 'http://other.web.rd01.sycdn.kuwo.cn/resource/n2/92/23/355869355.mp3',
+        cover: 'http://img.xiami.net/images/album/img95/2295/3218621464957901.jpg' },
+        {title: '边走边唱',
+        artist: '李荣浩',
+        mp3: 'http://other.web.ri01.sycdn.kuwo.cn/resource/n2/46/15/3172923646.mp3',
+        cover: 'http://p1.music.126.net/4Pu7M0q88fVVoo1ZFS_nmw==/3408486047237011.jpg' },
+        {title: 'IF YOU',
+        artist: 'BIGBANG',
+        mp3: 'http://other.web.rg01.sycdn.kuwo.cn/resource/n3/74/63/656073897.mp3',
+        cover: 'http://p1.music.126.net/l-TigfvwoKBUP_LDL1XgIg==/7735064302387363.jpg' }
+        ]
+

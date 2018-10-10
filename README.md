@@ -1,7 +1,7 @@
 
 [Hexo](https://hexo.io/zh-cn/) 是高效的静态站点生成框架，她基于 [Node.js](https://nodejs.org/)。 通过 Hexo 你可以轻松地使用 Markdown 编写文章，除了 Markdown 本身的语法之外，还可以使用 Hexo 提供的[标签插件](https://hexo.io/zh-cn/docs/tag-plugins.html)来快速的插入特定形式的内容。Git使用指南、Hexo博客设置、Git pages等更多搭建设置，点击查看[Git Pages使用指南](https://sli1989.github.io/2017/04/02/github-for-win/)。
 
-本[博客](https://sli1989.github.io)（[备站](https://sli1989.gitlab.io/)）基于[Gitlab](https://pages.gitlab.io/)的Continuous Integration和[Hexo NexT](https://theme-next.org/)主题部署，并自动推送到[Coding Pages](https://pages.coding.me/)和[Github Pages](https://pages.github.com/)。采用[子模块管理](https://sli1989.github.io/2017/04/02/github-for-win/#git-submodule)升级主题：在 hexo 博客目录放置`updatenext.sh`。
+本[博客](https://sli1989.github.io)（[备站](https://sli1989.gitlab.io/)）基于[Gitlab](https://pages.gitlab.io/)的Continuous Integration和[Hexo NexT](https://theme-next.org/)主题部署，并自动推送到[Coding Pages](https://pages.coding.me/)和[Github Pages](https://pages.github.com/)。所有外链域名以 Github Pages 为主，然后国内通过 Coding Pages 访问自定义域名，国外通过 Github Pages 访问自定义域名。采用[子模块管理](https://sli1989.github.io/2017/04/02/github-for-win/#git-submodule)升级主题：在 hexo 博客目录放置`updatenext.sh`。
 
 ```git
 cd themes/next
@@ -14,7 +14,7 @@ git commit -m "update next"
 git push -u origin master
 ```
 
-> 根据[博文](https://wafer.li/Hexo/%E8%A7%A3%E5%86%B3%20Travis%20CI%20%E6%80%BB%E6%98%AF%E6%9B%B4%E6%96%B0%E6%97%A7%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%97%AE%E9%A2%98/)还原了因CI部署改变的文章更新时间。所有外链域名以 Github Pages 为主，然后国内通过 Coding Pages 访问自定义域名，国外通过 Github Pages 访问自定义域名。
+> 根据[博文](https://wafer.li/Hexo/%E8%A7%A3%E5%86%B3%20Travis%20CI%20%E6%80%BB%E6%98%AF%E6%9B%B4%E6%96%B0%E6%97%A7%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%97%AE%E9%A2%98/)还原了因CI部署改变的文章更新时间。
 
 也可以采用[SED命令](https://github.com/sli1989/HEXO-NEXT-CUSTOM/blob/master/FixNext/fixNext.sh)，自动升级并修改 NEXT 主题文件。NexT 主题个性化文件列表：
 
