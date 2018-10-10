@@ -7,7 +7,7 @@ comments: false
 
 <p align="justfly" id="heheda"><br></font></p>
 
-<script src="/static/js/av-core-mini-0.6.4.js"></script>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
 
 <script>AV.initialize("uIrzS1i60S024CvU6ATzr4y7-gzGzoHsz", "9o0rnB856nyqXPURwBBncFkR");</script>
 
@@ -34,3 +34,5 @@ comments: false
     console.log("error");
   });
 </script>
+
+---

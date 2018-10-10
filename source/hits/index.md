@@ -3,16 +3,16 @@ title: Hits
 comments: false
 ---
 
-{% centerquote %}阅读榜Top 20{% endcenterquote %}
+{% centerquote %}阅读榜Top 30{% endcenterquote %}
 
 <p align="justfly" id="hits"><br></font></p>
 
-<script src="/static/js/av-core-mini-0.6.4.js"></script>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
 
 <script>AV.initialize("uIrzS1i60S024CvU6ATzr4y7-gzGzoHsz", "9o0rnB856nyqXPURwBBncFkR");</script>
 
 <script type="text/javascript">
-  var num=20
+  var num=30
   var time=0
   var title=""
   var url=""
@@ -34,3 +34,5 @@ comments: false
     console.log("error");
   });
 </script>
+
+---
