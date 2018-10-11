@@ -74,5 +74,5 @@ sed '/commonweal/a \  hits: 热文\n  navi: 导航\n  comments: 留言板' -i $1
 
 # delete words flashing in post-reward
 # add in front of the matching row
-sed '/#wechat:hover p/i /*' -i $1/source/css/_common/components/post/post-reward.styl
-sed '/#bitcoin:hover p/i */' -i $1/source/css/_common/components/post/post-reward.styl
+sed '/#QR > div:hover/i /*' -i $1/source/css/_common/components/post/post-reward.styl
+sed '/@keyframes roll/i */' -i $1/source/css/_common/components/post/post-reward.styl
