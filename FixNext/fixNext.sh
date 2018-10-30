@@ -18,6 +18,14 @@ git clone git@github.com:theme-next/hexo-theme-next.git $1
 # replace symbol of tags
 sed 's/rel="tag">#/rel="tag"><i class="fa fa-tag"><\/i>/' -i $1/layout/_macro/post.swig
 
+# fix Categories meta
+# replace
+sed "s/__('post.in')/__('post.in') + __('symbol.colon')/" -i $1/layout/_macro/post.swig
+# add behind the matching row
+sed '/symbol.comma/a \                  <span> > <\/span>' -i $1/layout/_macro/post.swig
+# delete the matching row
+sed -i '/symbol.comma/d' $1/layout/_macro/post.swig
+
 # added in v607
 # Beat up the heart on the footer
 # replace
@@ -69,6 +77,9 @@ sed '/@import "sidebar\/sidebar-blogroll";/a @import "../Pisces/_posts";' -i $1/
 # add new indexpage
 # add behind the matching row
 sed '/commonweal/a \  hits: 热文\n  navi: 导航\n  comments: 留言板' -i $1/languages/zh-CN.yml
+# fix Categories meta
+# replace
+sed "s/分类于/分类/" -i $1/languages/zh-CN.yml
 # replace the zh-CN
 # cp FixNext/zh-CN.yml $1/languages/zh-CN.yml
 
