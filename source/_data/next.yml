@@ -1,3 +1,5 @@
+
+
 # ---------------------------------------------------------------
 # Theme Core Configuration Settings
 # ---------------------------------------------------------------
@@ -152,7 +154,7 @@ site_state: true
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
 social:
   #GitHub: https://github.com/sli1989 || github
-  E-Mail: mailto:sli@hust.edu.cn || envelope
+  E-Mail: mailto:im.sai.li@outlook.com || envelope
   Telegram: https://t.me/sli1989 || telegram
   Gitter: https://gitter.im/sli1989 || github-alt
   #Google: https://plus.google.com/yourname || google
@@ -448,9 +450,6 @@ needmoreshare2:
       boxForm: horizontal
       position: middleRight
       networks: Weibo,Wechat,Douban,QQZone,Twitter,Facebook
-
-# Google Analytics
-google_analytics: UA-96363634-1
 
 # Show Views/Visitors of the website/page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
