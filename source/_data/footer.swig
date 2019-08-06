@@ -1,0 +1,1 @@
+<div class="footer-custom"> Hosted by <a target="_blank" href="https://pages.coding.me">Coding Pages</a>  |  Hosted by <a target="_blank" href="https://pages.github.com">GitHub Pages</a>  |  Hosted by <a target="_blank"  href="https://about.gitlab.com/features/pages/">Gitlab Pages</a> </div>

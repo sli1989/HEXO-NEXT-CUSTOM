@@ -1,5 +1,43 @@
 // Custom styles.
 
+.post-toc {
+  ol {
+    font-size: 14px !important;
+	}
+}
+
+.site-author-image {
+opacity: 1;
+}
+
+# inline code
+
+code { 
+color: #ec7f00; 
+}
+
+# codeblock
+
+figcaption {
+font-size: 14px;
+}
+
+.copy-btn {
+top: initial !important;
+bottom: 16px;
+}
+
+# blockquote
+
+blockquote { 
+  line-height: $line-height-code-block;
+  //font-size: 14px;
+  font-family: "Microsoft YaHei", Menlo, "PingFang SC", monospace;
+  //background-color: $gainsboro;
+  border-left: 4px solid #42B983;
+  }
+
+
 // decrease header-inner distance
 .header-inner {
 	padding: 100px 0 20px;
@@ -38,7 +76,6 @@
   margin-top: 0em;
   margin-bottom: 0.5em;
  }}
-
 // the style of footnotes when hocked up
 .footnoteTip {
  position: absolute;
@@ -56,33 +93,6 @@
   margin-bottom: 0.5em;
  }}
 
-// not indented in first line using blockquote 
-blockquote { 
-  margin-bottom: 0.8em;
-  line-height: $line-height-code-block;
-  font-size: 15px;
-  font-family: "Microsoft YaHei", Menlo, "PingFang SC", monospace;
-  //background-color: $gainsboro;
-  border-left: 4px solid #42B983;
- p {
-//  text-indent: -2em;
-  display: inline;
- }}
-
-// the color of inline code using backquote #7851a9
-code { color: #ec7f00; }
-
-// image in sidebar with circle and rotation and hypelink
-.site-author-image {
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 100%;
-	max-width: 200px;
-    transition: transform 1.0s ease-out;
-}
-.posts-expand .post-body img:hover {
-    transform: initial;
-}
-
 // the color of hypelink in sidebar
 .sidebar a {
     color: #ccc;
@@ -95,45 +105,5 @@ code { color: #ec7f00; }
 // prevent text expand in post
 .posts-expand .post-body {
     text-align: initial;
-}
-
-// custom style of the article code block
-code {
-    margin: 0px 4px;
-}
-// the color of hypelink in code block
-.highlight figcaption a {
-    color: rgb(80, 115, 184);
-}
-// the top style of the article code block
-.highlight figcaption {
-    margin: 0em;
-    padding: 0.5em;
-    background: #eee;
-    border-bottom: 1px solid #e9e9e9;
-}
-// add rounded code block
-.highlight { border-radius: 5px;}
-pre { border-radius: 5px;}
-// diff style of code block
-pre .addition {
-    background: #e6ffed;
-}
-pre .deletion {
-    background: #ffeef0;
-}
-
-// beating heart in footer icon
-@keyframes heartAnimate {
-    0%,100%{transform:scale(1);}
-    10%,30%{transform:scale(0.9);}
-    20%,40%,60%,80%{transform:scale(1.1);}
-    50%,70%{transform:scale(1.1);}
-}
-#heart {
-    animation: heartAnimate 1.33s ease-in-out infinite;
-}
-.with-love {
-    color: rgb(255, 113, 168);
 }
 */
