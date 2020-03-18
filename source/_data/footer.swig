@@ -1,1 +1,1 @@
-<div class="footer-custom"> Hosted by <a target="_blank" href="https://pages.coding.me">Coding Pages</a>  |  Hosted by <a target="_blank" href="https://pages.github.com">GitHub Pages</a>  |  Hosted by <a target="_blank"  href="https://about.gitlab.com/features/pages/">Gitlab Pages</a> </div>
+<div class="footer-custom"> Hosted by <a target="_blank" href="https://coding.net/">Goding Pages</a>  |  <a target="_blank" href="https://pages.github.com">GitHub Pages</a>  |  <a target="_blank"  href="https://about.gitlab.com/stages-devops-lifecycle/pages/">Gitlab Pages</a> </div>
